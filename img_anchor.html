@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image & Anchor</title>
+</head>
+<body>
+    <h1>____ Image insertion _____</h1>
+
+    <img src="./kl logo.jpg" alt="KL LOGO" width="200" height="200">
+<a href="https://www.kluniversity.in/">kluniversity.in</a>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Timetable </title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: Arial, sans-serif;
+      color: #24364b;
+      background: #f4f7fb;
+    }
+
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .title-row h1,
+    .title-row h2 {
+      margin: 0;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 1.25rem;
+    }
+
+    .title-row h1 {
+      background: #e3f2fd;
+      color: #24547a;
+    }
+
+    .title-row h2 {
+      background: #e8f5e9;
+      color: #34613a;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      background: white;
+      border: 1px solid #c8dfd2;
+      border-radius: 8px;
+      box-shadow: 0 4px 14px rgb(35 75 120 / 8%);
+    }
+
+    table {
+      width: 100%;
+      min-width: 780px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      padding: 14px 12px;
+      border: 1px solid #c8dfd2;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    thead th {
+      color: #24495f;
+      background: #b9e2f5;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    thead th:first-child,
+    tbody th {
+      width: 80px;
+    }
+
+    tbody th {
+      font-weight: 600;
+      background: #d8efdc;
+    }
+
+    tbody td {
+      background: #f4fbff;
+    }
+
+    tbody tr:nth-child(even) td {
+      background: #f3faf3;
+    }
+
+    .course {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .section,
+    .room {
+      display: block;
+      color: #52677e;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
+
+      .title-row {
+        flex-wrap: wrap;
+      }
+
+      .title-row h1,
+      .title-row h2 {
+        font-size: 1.1rem;
+      }
+
+      th,
+      td {
+        padding: 11px 9px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="title-row">
+    
+    <h1>Saranya timetable</h1>
+  </div>
+
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Mon</th>
+          <td><span class="course">26MT1202E-L</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26MT1202E-L</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26SC1203E-S</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26SC1203E-S</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26EC1101E-L</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-L</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Tue</th>
+          <td><span class="course">26MT1202E-L</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26MT1202E-T</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26SC1203E-S</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26SC1203E-S</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26EC1101E-S</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26EC1101E-S</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Wed</th>
+          <td><span class="course">26MT1202E-T</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26MT1202E-T</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26EC1101E-L</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26EC1101E-L</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-P</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-P</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Thu</th>
+          <td><span class="course">26SC1203E-L</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26SC1203E-L</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26EC1101E-S</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26EC1101E-S</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-P</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-P</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Fri</th>
+          <td><span class="course">26SC1203E-S</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26SC1203E-S</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+          <td><span class="course">26SC1204E-L</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-L</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26UC1204E-L</span><span class="section">S-3</span><span class="room">Room C308</span></td>
+          <td><span class="course">26UC1204E-L</span><span class="section">S-3</span><span class="room">Room C308</span></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Sat</th>
+          <td><span class="course">26EC1101E-S</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26EC1101E-S</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-P</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26SC1204E-P</span><span class="section">S-2</span><span class="room">Room C209</span></td>
+          <td><span class="course">26UC1204E-L</span><span class="section">S-3</span><span class="room">Room C308</span></td>
+          <td><span class="course">26SC1203E-L</span><span class="section">S-1</span><span class="room">Room C109</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+</a>
+</body>
+</html>
